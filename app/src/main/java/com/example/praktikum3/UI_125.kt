@@ -62,6 +62,9 @@ fun ActivasPertama(modifier: Modifier) {
                     contentDescription = null,
                     modifier = Modifier
                         .size(100.dp)
+                        .padding(5.dp)
+                )
+
 
 
 
