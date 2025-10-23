@@ -71,6 +71,7 @@ fun ActivasPertama(modifier: Modifier) {
                 Column {
                     Text(
                         text = stringResource(id = R.string.nama),
+                        fontSize = 30.sp,
 
 
 
