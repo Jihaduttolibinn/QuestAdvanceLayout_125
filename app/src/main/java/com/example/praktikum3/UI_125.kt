@@ -68,10 +68,15 @@ fun ActivasPertama(modifier: Modifier) {
 
                 Spacer(modifier = Modifier.width(30.dp))
 
+                Column {
+                    Text(
+                        text = stringResource(id = R.string.nama),
 
 
 
-            }
+
+
+                }
 
         }
 
