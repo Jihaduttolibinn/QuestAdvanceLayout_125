@@ -19,3 +19,10 @@ fun ActivasPertama(modifier: Modifier){
             .fillMaxSize(),
         horizontalAligment = Alignment.CenterHorizontally
         ){
+        text(
+            text = stringResource(),
+            fontSize = 35.dp,
+            fontWeight = FontWeight.Bold
+        )
+
+    }
