@@ -1,5 +1,6 @@
 package com.example.praktikum3
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -54,6 +55,12 @@ fun ActivasPertama(modifier: Modifier) {
                 modifier = Modifier.padding(8.dp)
             ){
                 val gambar = painterResource(id = R.drawable.bapakkumis)
+
+                Image(
+                    painter = gambar,
+                    contentDescription = null,
+                    modifier = Modifier
+
 
             }
 
