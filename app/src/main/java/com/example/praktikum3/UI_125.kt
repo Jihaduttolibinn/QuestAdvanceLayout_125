@@ -108,11 +108,11 @@ fun ActivasPertama(modifier: Modifier) {
             colors = CardDefaults.cardColors(
                 containerColor = Color.Blue
             )
-        ){
+        ) {
             Row(
                 verticalAlignment = Alignment.CenterVertically,
                 modifier = Modifier.padding(10.dp)
-            ){
+            ) {
                 val gambar = painterResource(id = R.drawable.img)
 
                 Image(
@@ -203,10 +203,21 @@ fun ActivasPertama(modifier: Modifier) {
                 }
             }
         }
-
-
+        // Teks bawah
+        Box(
+            modifier = Modifier.fillMaxSize()
+        ) {
+            Text(
+                text = stringResource(id = R.string.Copy),
+                modifier = Modifier
+                    .align(Alignment.BottomCenter)
+                    .padding(bottom = 50.dp)
+            )
+        }
     }
 }
+
+
 
 
 
