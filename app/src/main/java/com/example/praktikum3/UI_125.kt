@@ -115,7 +115,13 @@ fun ActivasPertama(modifier: Modifier) {
             ){
                 val gambar = painterResource(id = R.drawable.img)
 
-
+                Image(
+                    painter = gambar,
+                    contentDescription = null,
+                    modifier = Modifier
+                        .size(100.dp)
+                        .padding(7.dp)
+                )
             }
         }
     }
