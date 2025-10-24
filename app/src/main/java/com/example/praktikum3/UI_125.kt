@@ -140,8 +140,11 @@ fun ActivasPertama(modifier: Modifier) {
                     )
                     Text(
                         text = stringResource(id = R.string.Nim),
-
+                        fontSize = 18.sp,
+                        color = Color.White // atau Color.Yellow sesuai selera
+                    )
                 }
+            }
         }
     }
 }
