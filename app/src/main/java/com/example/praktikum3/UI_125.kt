@@ -1,6 +1,7 @@
 package com.example.praktikum3
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -23,11 +24,14 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.ui.unit.dp
+
 
 
 @Composable
 fun ActivasPertama(modifier: Modifier) {
-    Column (
+    Column(
         modifier = Modifier.padding(top = 100.dp)
             .fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally
@@ -52,39 +56,64 @@ fun ActivasPertama(modifier: Modifier) {
             colors = CardDefaults.cardColors(
                 containerColor = Color.DarkGray
             )
-        ){
+        ) {
             Row(
                 verticalAlignment = Alignment.CenterVertically,
                 modifier = Modifier.padding(8.dp)
-            ){
-                val gambar = painterResource(id = R.drawable.bapakkumis)
+            ) {
+                val gambar = painterResource(id = R.drawable.img)
 
                 Image(
                     painter = gambar,
                     contentDescription = null,
                     modifier = Modifier
                         .size(100.dp)
-                        .padding(5.dp)
+                        .padding(7.dp)
                 )
 
                 Spacer(modifier = Modifier.width(30.dp))
 
-                Column {
+
+                // Column mengambil sisa ruang, teks berada di tengah secara vertikal & horizontal
+                Column(
+                    modifier = Modifier
+                        .align(Alignment.CenterVertically)
+                        .padding(vertical = 27.dp),
+                    verticalArrangement = Arrangement.Center,
+                    horizontalAlignment = Alignment.CenterHorizontally
+                ) {
                     Text(
                         text = stringResource(id = R.string.nama),
-                        fontSize = 30.sp,
+                        fontSize = 25.sp,
                         fontFamily = FontFamily.Cursive,
-                        color = Color.White,
-                        modifier = Modifier.padding(top = 25.dp)
+                        color = Color.White
                     )
+
+                    Spacer(modifier = Modifier.height(6.dp))
+
                     Text(
-                        text = stringResource(id = R.string.alamat),
-                        fontSize = 20.sp,
-                        color = Color.Yellow,
-                        modifier = Modifier.padding(top = 10.dp)
+                        text = stringResource(id = R.string.Alamat),
+                        fontSize = 25.sp,
+                        color = Color.Yellow
                     )
 
+                }
+            }
         }
-
+        // Kartu informasi 2
+        Card(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(12.dp),
+            colors = CardDefaults.cardColors(
+                containerColor = Color.Blue
+            )
+        ){
     }
 }
+
+
+
+
+
+
