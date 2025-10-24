@@ -189,7 +189,13 @@ fun ActivasPertama(modifier: Modifier) {
                 fontFamily = FontFamily.Cursive,
                 color = Color.White
                 )
-            }
+                    Text(
+                        text = stringResource(id = R.string.Nim2),
+                        fontSize = 18.sp,
+                        color = Color.White // atau Color.Yellow sesuai selera
+                    )
+
+                }
 
 
     }
