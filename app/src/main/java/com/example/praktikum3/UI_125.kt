@@ -138,6 +138,9 @@ fun ActivasPertama(modifier: Modifier) {
                         fontFamily = FontFamily.Cursive,
                         color = Color.White
                     )
+                    Text(
+                        text = stringResource(id = R.string.Nim),
+
                 }
         }
     }
