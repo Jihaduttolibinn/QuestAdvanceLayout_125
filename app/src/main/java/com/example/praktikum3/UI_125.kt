@@ -173,6 +173,16 @@ fun ActivasPertama(modifier: Modifier) {
                         .size(100.dp)
                         .padding(7.dp)
                 )
+                Spacer(modifier = Modifier.width(30.dp))
+
+                Column(
+                    modifier = Modifier
+                        .weight(1f)                       // ambil sisa lebar (opsional tapi berguna)
+                        .align(Alignment.CenterVertically)
+                        .padding(vertical = 10.dp),
+                    verticalArrangement = Arrangement.spacedBy(6.dp),
+                    horizontalAlignment = Alignment.Start
+                ) {
             }
             }
 
