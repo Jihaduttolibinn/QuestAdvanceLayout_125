@@ -159,11 +159,11 @@ fun ActivasPertama(modifier: Modifier) {
             colors = CardDefaults.cardColors(
                 containerColor = Color.Red
             )
-        ){
+        ) {
             Row(
                 verticalAlignment = Alignment.CenterVertically,
                 modifier = Modifier.padding(10.dp)
-            ){
+            ) {
                 val gambar = painterResource(id = R.drawable.img)
 
                 Image(
@@ -183,19 +183,26 @@ fun ActivasPertama(modifier: Modifier) {
                     verticalArrangement = Arrangement.spacedBy(6.dp),
                     horizontalAlignment = Alignment.Start
                 ) {
-               Text(
-                   text = stringResource(id = R.string.nama2),
-                fontSize = 26.sp,
-                fontFamily = FontFamily.Cursive,
-                color = Color.White
-                )
+                    Text(
+                        text = stringResource(id = R.string.nama2),
+                        fontSize = 26.sp,
+                        fontFamily = FontFamily.Cursive,
+                        color = Color.White
+                    )
                     Text(
                         text = stringResource(id = R.string.Nim2),
                         fontSize = 18.sp,
                         color = Color.White // atau Color.Yellow sesuai selera
                     )
+                    Text(
+                        text = stringResource(id = R.string.Alamat2),
+                        fontSize = 18.sp,
+                        color = Color.White
+                    )
 
                 }
+            }
+        }
 
 
     }
