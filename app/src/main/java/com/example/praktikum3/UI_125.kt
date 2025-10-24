@@ -78,7 +78,7 @@ fun ActivasPertama(modifier: Modifier) {
                 Column(
                     modifier = Modifier
                         .align(Alignment.CenterVertically)
-                        .padding(vertical = 27.dp),
+                        .padding(vertical = 25.dp),
                     verticalArrangement = Arrangement.Center,
                     horizontalAlignment = Alignment.CenterHorizontally
                 ) {
@@ -128,7 +128,7 @@ fun ActivasPertama(modifier: Modifier) {
                     modifier = Modifier
                         .weight(1f)                       // ambil sisa lebar (opsional tapi berguna)
                         .align(Alignment.CenterVertically)
-                        .padding(vertical = 20.dp),
+                        .padding(vertical = 10.dp),
                     verticalArrangement = Arrangement.spacedBy(6.dp),
                     horizontalAlignment = Alignment.Start
                 ) {
@@ -151,6 +151,15 @@ fun ActivasPertama(modifier: Modifier) {
                 }
             }
         }
+        // Kartu informasi 3
+        Card(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(12.dp),
+            colors = CardDefaults.cardColors(
+                containerColor = Color.Red
+            )
+        ){
     }
 }
 
