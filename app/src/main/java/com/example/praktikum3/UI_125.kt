@@ -132,7 +132,12 @@ fun ActivasPertama(modifier: Modifier) {
                     verticalArrangement = Arrangement.spacedBy(6.dp),
                     horizontalAlignment = Alignment.Start
                 ) {
-
+                    Text(
+                        text = stringResource(id = R.string.nama1),
+                        fontSize = 26.sp,
+                        fontFamily = FontFamily.Cursive,
+                        color = Color.White
+                    )
                 }
         }
     }
