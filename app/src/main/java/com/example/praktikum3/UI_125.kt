@@ -109,6 +109,13 @@ fun ActivasPertama(modifier: Modifier) {
                 containerColor = Color.Blue
             )
         ){
+            Row(
+                verticalAlignment = Alignment.CenterVertically,
+                modifier = Modifier.padding(10.dp)
+            ){
+
+            }
+        }
     }
 }
 
